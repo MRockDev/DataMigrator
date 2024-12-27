@@ -75,6 +75,7 @@ class DataMigrator:
         except Exception as e:
             raise Exception(f"Migration failed: {e}")
 
+
 # Example usage:
 if __name__ == "__main__":
     # Initialize connections
