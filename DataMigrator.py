@@ -52,8 +52,8 @@ class DataMigrator:
     def transform_row_to_document(self, row):
          # Converts a PostgreSQL row into a MongoDB document format
         return {
-            "id": str(uuid.uuid4()).split("-")[0], # Creates a unique ID
-            "msisdn": row[0],
+            "_id": str(uuid.uuid4()).split("-")[0], # Creates a unique ID
+            "phone_number": row[0],
             "name": row[1],
             "gender": row[2],
             "address": row[3],
